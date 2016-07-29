@@ -20,14 +20,15 @@
         processing.keyPressed = function () { keyIsPressed = true; };
         processing.keyReleased = function () { keyIsPressed = false; };
 
+//	Khan Academy has their own sandbox of images
 //        function getImage(s) {
 //            var url = "https://www.kasandbox.org/programming-images/" + s + ".png";
 //            processing.externals.sketch.imageCache.add(url);
 //            return processing.loadImage(url);
 //        }
         function getImage(s) {
-// woodstock            var url = "http://www.check-six.com/images/peanuts026.gif";
-			var url = "http://www.polyvore.com/cgi/img-thing?.out=jpg&size=l&tid=781978");
+// woodstock            
+		var url = "http://www.check-six.com/images/peanuts026.gif";
             processing.externals.sketch.imageCache.add(url);
             return processing.loadImage(url);
         }
@@ -50,8 +51,7 @@
     			imageMode(CENTER);
     		for (var i = 0; i < yPositions.length; i++) {
 				image(getImage("space/star"), xPositions[i], yPositions[i], 30, 30);
-// addState(new State("idle", "graphics/mario/small/Standing-mario.gif"));
-        // image(imgWS, xPositions[i], yPositions[i], 30, 30);
+
     			}
 			};
 
